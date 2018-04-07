@@ -125,14 +125,15 @@
 			<div class="col-md-offset-3 col-md-6 page-block" style="padding:80px 0;">
 				<form style="padding-bottom:80px">
 					<div class="form-group">
-						<label for="exampleInputName">Name</label>
-						<input type="email" class="form-control" id="exampleInputName" placeholder="Name">
+						<label class="from-label" for="InputName">Name</label>
+            <div class="controls">
+						<input type="text" class="form-control" id="InputName" value="<?php echo set_value('InputName'); ?>" placeholder="Name" method="post">
 					</div>
-
+        </div>
 					<div class="form-group">
-						<label for="exampleInputId">Id</label>
+						<label for="InputId">Id</label>
             <div class="input-group">
-						  <input type="email" class="form-control" id="exampleInpuId" placeholder="Id">
+						  <input type="text" class="form-control" id="InpuId" value="<?php echo set_value('InputId'); ?>"placeholder="Id">
               <span class="input-group-btn">
                 <button class="btn btn-success" >ID 중복확인</button>
               </span>
@@ -141,19 +142,19 @@
 
 
 					<div class="form-group">
-						<label for="exampleInputPassword1">Password</label>
-						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						<label for="InputPassword1">Password</label>
+						<input type="password" class="form-control" id="InputPassword1" placeholder="Password">
 					</div>
 
           <div class="form-group">
 						<label for="exampleInputConfirmPassword">Confirm Password</label>
-						<input type="password" class="form-control" id="exampleInputConfirm Password" placeholder="Confirm Password">
+						<input type="password" class="form-control" id="InputConfirm Password" placeholder="Confirm Password">
 					</div>
 
           <div class="form-group">
             <label for="username">본인확인용 이메일 주소</label>
             <div class="input-group">
-              <input type="tel" class="form-control" id="username" placeholder="@hufs.ac.kr 계정으로 입력해주세요">
+              <input type="email" class="form-control" id="username" placeholder="@hufs.ac.kr 계정으로 입력해주세요">
               <span class="input-group-btn">
                 <button class="btn btn-success">인증번호 전송 <i class="fa fa-mail-forward spaceLeft"></i></button>
               </span>
@@ -204,10 +205,9 @@
     <div class="row">
 
       <!--site details-->
-      <div class="col-md-3 col-sm-12 col-xs-12 site-identity"> <a class="navbar-brand" href="index.html">Numero</a>
-        <p>Numero that can help you
-          prototyping easy entire websites
-          in Photoshop and Sketch. </p>
+      <div class="col-md-3 col-sm-12 col-xs-12 site-identity"> <a class="navbar-brand" href="index.html">Hufs-go</a>
+        <p>안녕하세요.
+          한국외국어대학교 국제교류 프로그램 학교 검색 및 추천 사이트 입니다.</p>
         <ul class="socio">
           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
           <li><a href="#"><i class="fa fa-rss"></i></a></li>
